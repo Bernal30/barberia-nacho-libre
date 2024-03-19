@@ -1,0 +1,202 @@
+header{
+    /*Dos puntos para asignar valor a un atributo*/
+    background-color: #BBBBBB; 
+    /*Punto y coma para cerrar sintaxis*/
+    padding: 20px;
+}
+
+.imagen_mascara{
+    width: 250px;
+}
+
+.caja{
+    width: 1400px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.titulo_barberia{
+    position: absolute;
+    top: 125px;
+    left: 225px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 23px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav{
+    position: absolute;
+    top: 125px;
+    right: 0px;
+}
+
+/* propiedad de cascada para el elemento li con etiqueta padre nav*/
+
+nav li{
+    display: inline;
+    margin: 0 0 0 17px;
+}
+
+/* propiedad de cascada para el elemento a con etiqueta padre nav*/
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 23px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*función hover es ejecutada cuando se captura el evento: el cursor esta sobre el elemento*/
+
+nav a:hover{
+    color: #2274aa;
+    text-decoration: underline;
+}
+
+.container__listas{
+    width: fit-content;
+    display: block;
+    margin: 0 auto;
+}
+
+.productos{
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.imagen_producto{
+    transform: scale(0.5);
+    width: 100%;
+}
+
+.productos li{
+    /*el objeto se coloca en bloquer alineado y no ocupa el 100% del renglon de la pagina*/
+    display: inline-block;
+    text-align: center;
+    width: 30%; 
+    /*alineación vertical respecto a la parte superior*/
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    /*El tamaño de caja se queda estable apesar del padding(incrementa hacia adentro)*/
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.productos li:hover{
+    border-color: #2274aa;
+}
+
+/*función active es ejecutada cuando se captura el evento: el cursor da click al elemento*/
+
+.productos li:active{
+    border-color: red;
+}
+
+.productos h3{
+    font-size: 23px;
+    font-weight: bold; 
+}
+
+.productos li:hover h3{
+    font-size: 30px;
+}
+
+.producto-descripcion{
+    font-size: 20px;
+}
+
+.producto-precio{
+    font-size: 21px;
+    margin-top: 17px;
+}
+
+footer{
+    text-align: center;
+    background: url(img/bg.jpg);
+    padding: 40px;
+}
+
+.Copiryght{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+/*separar por coma a etiqutas para asignarles los mismos estilos*/
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+
+.input-informacion{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 37px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 13px;
+    margin: 20px 0  20px 60px;
+    /*el tiempo de transición de un atributo a otro para todos los atributos*/
+    transition: 1s all;
+    /*modificación del puntero*/
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background-color: darkorange;
+    /*transforma la escala un 20%*/
+    transform: scale(1.2);
+}
+
+/*
+-Rotar 70 grados el elemento
+.enviar{
+    transform: rotate(70deg);
+}
+*/
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}

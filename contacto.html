@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Contacto - Barbería Nacho Libre</title>
+        <!-- archivo reset enlazado antes de la hoja de estilos original (productos.css) para no borrarla -->
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        	
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img src="img/mascara 2.png" alt="logo_barbaería_Nacho_Libre" title="Barbería Nacho Libre" class="imagen_mascara"></h1>
+                <h2 class="titulo_barberia">Nacho Libre Barber Shop</h2>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" target="_blank">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html" target="_blank">Contacto</a></li>
+                    </ul>                
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form>
+                <!--label para añadir una leyenda explicativa al input-->
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <!--asignar un id al input para entrelazarlo con el label mediante for=""-->
+                <input id="nombreapellido" type="text" class="input-informacion" required placeholder="Nombre completo">
+
+                <label for="correoelectronico">Correo Electronico</label>
+                <!--el atributo placeholder proporcionar una sugerencia o ejemplo de lo que se espera que el usuario ingrese en ese espacio-->
+                <input id="correoelectronico" type="email" class="input-informacion" required placeholder="email@dominio.com">
+
+                <label for="numerocelular">Número Celular</label>               
+                <!--required es un atributo que vuelve oblicatorio al campo del formulario al cual se le asigno-->
+                <input id="numerocelular" type="tel" class="input-informacion" required placeholder="+(XX)-XXXX-XXXX">
+
+                <label for="mensaje" required>Mensaje</label>
+                <!--caja de texto con dimensiones manipulables-->
+                <textarea cols="70" rows="10" id="mensaje" class="input-informacion"></textarea>
+
+                <!--filedset permite organizar en grupos los campos de un formulario-->
+                <fieldset>
+                    <!--legend crea un título para un grupos los campos ( <fieldset> ) de un formulario-->
+                    <legend>¿Cómo le gustaria que lo contactemos?</legend>
+
+                    <!--name="contacto" a las inputs tipo radio para que sean del mismo grupo y no se puedan seleccionar a la vez-->
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                    
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="horario">¿En qué horario prefiere ser atendido?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+                
+                <!--de tipo checkbox: casilla que se puede marcar o desmarcar-->
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaria resivir novedades de la Barbeíra Nacho Libre?</label>
+
+                <!--boton para enviar el formulario-->
+                <input type="submit" value="Enviar Formulario" class="enviar">
+
+                <!--etiqueta de tabla-->
+                <table>
+                    <!--encabezado de la tabla-->
+                    <thead>
+                        <tr>
+                            <th>Día</th>
+                            <th>Horario</th>
+                        </tr>
+                    </thead>
+                    <!--cuerpo de la tabla-->
+                    <tbody>
+                        <!--tr es uan fila de la tabla que viene del ingles table row-->
+                        <tr>
+                            <!--td es una celda de datos de la tabla -->
+                            <td>Lunes</td>
+                            <td>8h - 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Miercoles</td>
+                            <td>8h - 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td>8h - 20h</td>
+                        </tr>
+                    </tbody>
+                    <!--pie de pagina de la tabla (esta vacío)-->
+                    <tfoot></tfoot>
+                </table>
+
+            </form>
+        </main>
+        <footer>
+            <!-- footer etiqueta de pie de pagina-->
+            <img src="img/mascara 2.png" alt="logo_barbaería_Nacho_Libre" title="Barbería Nacho Libre" class="imagen_mascara">
+            <p class="Copiryght">&copy Copiryght Barbería Nacho Libre - 2024</p>
+        </footer>
+    </body>
+
+</html>

@@ -1,0 +1,62 @@
+/*seleccion de etiqueta pro nombre de la misma*/
+body{
+    background-color: #CCCCCC;
+}
+
+/*seleccion de etiqueta por clase*/
+.titulo-principal{
+    padding-left: 60px;
+}
+
+/*seleccion de etiqueta por Id*/
+#banner{
+    width: 100%;
+    border: 7px solid #000000;
+}
+
+.principal{
+    background-color: #b9e0f0;
+    padding: 17px;
+}
+
+.titulo-centralizado{
+    text-align: center;
+    font-size: 37px;
+    border: 3px solid #8633339c;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+p{
+    text-align: center;
+    font-size: 17px;
+}
+
+em strong{
+    color: brown;
+}
+
+#mision{
+    font-size: 20px;
+}
+
+.diferenciales{
+    background-color: #a4a6ee9c;
+    padding: 17px;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    margin-right: 15%;
+}
+
+.items{
+    font-style: italic;
+    font-size: 23px;
+}
+
+.imagenDiferenciales{
+    width: 50%;
+}
