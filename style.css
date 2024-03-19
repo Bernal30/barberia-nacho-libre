@@ -1,3 +1,7 @@
+body{
+  font-family: "Montserrat", sans-serif;
+}
+
 header{
     /*Dos puntos para asignar valor a un atributo*/
     background-color: #BBBBBB; 
@@ -20,7 +24,6 @@ header{
     top: 125px;
     left: 225px;
     text-transform: uppercase;
-    font-weight: bold;
     font-size: 23px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -42,8 +45,7 @@ nav li{
 
 nav a{
     text-transform: uppercase;
-    color: #000000;
-    font-weight: bold;
+    color: #000000;   
     font-size: 23px;
     text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -199,4 +201,53 @@ thead{
 td, th{
     border: 1px solid #000000;
     padding: 8px 15px;
+}
+
+/*Aqui inicia el CSS para el home*/
+
+.banner{
+    width: 100%;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.Utencilos{
+    width: 120px;
+    float: left;
+    margin: 0 30px 30px 0;
+}
+
+.mapa{
+    padding: 3em 0;
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.imagenDiferenciales{
+    width: 60%;
+}
+
+.video{
+    width: 560px;
+    margin: 2em auto;
 }
