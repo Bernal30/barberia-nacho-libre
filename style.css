@@ -14,7 +14,7 @@ header{
 }
 
 .caja{
-    width: 1400px;
+    width: 940px;
     position: relative;
     margin: 0 auto;
 }
@@ -24,7 +24,7 @@ header{
     top: 125px;
     left: 225px;
     text-transform: uppercase;
-    font-size: 23px;
+    font-size: 1.2em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -46,7 +46,7 @@ nav li{
 nav a{
     text-transform: uppercase;
     color: #000000;   
-    font-size: 23px;
+    font-size: 1.2em;
     text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -320,7 +320,7 @@ p:first-line{
 .imagen-diferenciales{
     width: 60%;
     transition: 400ms;
-    box-shadow: 10px 10px 30px 15px #000;
+    box-shadow: 5px 5px 15px 9px #000;
 }
 
 .imagen-diferenciales:hover{
@@ -330,4 +330,28 @@ p:first-line{
 .video{
     width: 560px;
     margin: 2em auto;
+}
+
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+        transform: scale(0.85);
+    }
+    .titulo_barberia{
+        position: static;
+        text-align: center;
+        padding: 21px 0;
+    }
+    nav{
+        position: static;
+        text-align: center;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+        margin: 0 15px;
+    }
+    .imagen-diferenciales, .lista-diferenciales{
+        width: 100%;
+        margin: 21px 0;
+    }    
 }
