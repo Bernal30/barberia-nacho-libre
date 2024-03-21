@@ -25,7 +25,6 @@ header{
     left: 225px;
     text-transform: uppercase;
     font-size: 1.2em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 nav{
@@ -48,7 +47,6 @@ nav a{
     color: #000000;   
     font-size: 1.2em;
     text-decoration: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /*función hover es ejecutada cuando se captura el evento: el cursor esta sobre el elemento*/
@@ -89,7 +87,6 @@ nav a:hover{
     box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 17px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .productos li:hover{
@@ -99,7 +96,7 @@ nav a:hover{
 /*función active es ejecutada cuando se captura el evento: el cursor da click al elemento*/
 
 .productos li:active{
-    border-color: red;
+    border-color: #f86868;
 }
 
 .productos h3{
@@ -177,7 +174,7 @@ form label, form legend{
 }
 
 /*
--Rotar 70 grados el elemento
+Rotar 70 grados el elemento
 .enviar{
     transform: rotate(70deg);
 }
@@ -333,6 +330,7 @@ p:first-line{
 }
 
 @media screen and (max-width:480px){
+    /*ELEMENTOS DEL HOME PAGE*/
     h1{
         text-align: center;
         transform: scale(0.85);
@@ -353,5 +351,21 @@ p:first-line{
     .imagen-diferenciales, .lista-diferenciales{
         width: 100%;
         margin: 21px 0;
-    }    
+    }
+    .imagen_mascara{
+        transform: scale(0.85);
+    }
+    /*ELEMENTOS DEL PAGE CONTACTO*/
+    .productos li{
+        width: 80%;
+        display: block;
+        margin: 23px auto;
+        transition: 0.5s all;
+    }
+    .productos li:active{
+        transform: scale(1.05);
+    }
+    .producto-descripcion, .producto-precio{
+        font-size: 19px;
+    }
 }
