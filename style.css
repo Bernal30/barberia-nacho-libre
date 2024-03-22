@@ -145,6 +145,8 @@ form label, form legend{
     margin: 0 0 20px;
     padding: 10px 25px;
     width: 50%;
+    border: 1px solid #000;
+    border-radius: 11px;
 }
 
 .checkbox{
@@ -329,6 +331,13 @@ p:first-line{
     margin: 2em auto;
 }
 
+/*NUEVOS ESTILOS PARA CONTACTO PAGE*/
+.container_formulario{
+    width: 55%;
+    display: block;
+    margin: 0 auto;
+}
+
 @media screen and (max-width:480px){
     /*ELEMENTOS DEL HOME PAGE*/
     h1{
@@ -355,7 +364,7 @@ p:first-line{
     .imagen_mascara{
         transform: scale(0.85);
     }
-    /*ELEMENTOS DEL PAGE CONTACTO*/
+    /*ELEMENTOS DEL PRODUCTOS PAGE*/
     .productos li{
         width: 80%;
         display: block;
@@ -366,6 +375,32 @@ p:first-line{
         transform: scale(1.05);
     }
     .producto-descripcion, .producto-precio{
+        font-size: 19px;
+    }
+    /*ELEMENTOS DEL CONTACTO PAGE*/
+    .container_formulario{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .input-informacion{
+        width: 75%;
+        margin: 25px 0 25px 0;
+        padding: 15px;
+        font-size: 19px;
+    }
+    fieldset .horario{
+        padding: 29px 0 10px;
+    }
+    .opciones_horarios{
+        padding: 13px;
+        font-size: 17px;
+        border: 1px solid #000;
+        border-radius: 11px;
+    }
+    .enviar{
+        width: 75%;
+        display: block;
+        margin: 20px auto;
         font-size: 19px;
     }
 }
